@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "ipython>=8.31.0",
     "matplotlib>=3.10.0",
+    "onnx>=1.17.0",
     "opencv-python>=4.10.0.84",
     "pytorch-msssim>=1.0.0",
     "torch>=2.5.1",
