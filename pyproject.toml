@@ -10,6 +10,7 @@ dependencies = [
     "matplotlib>=3.10.0",
     "onnx>=1.17.0",
     "opencv-python>=4.10.0.84",
+    "pycuda>=2024.1.2",
     "pytorch-msssim>=1.0.0",
     "torch>=2.5.1",
     "torchvision>=0.2.0",

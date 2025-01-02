@@ -120,7 +120,7 @@ transform = transforms.Compose([
 ])
 
 # Load and process the input image
-input_image_path = 'images.jpeg'
+input_image_path = 'test_image/sample.jpg'
 input_image = Image.open(input_image_path).convert('RGB')
 
 # get original image size
