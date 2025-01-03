@@ -50,6 +50,21 @@ pip install uv
 To set up the environment, there are two ways:
 
 ### Use Container (TensorRT supported)
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Benedixx/imej-denoiser.git
+   cd imej-denoiser
+   ```
+
+2. **Build image**
+   ```bash
+   dockerbuild -t imej-denoiser .
+   ```
+
+3. **Run container**
+   ```bash
+   docker run -d --name imej-denoiser-container --gpus all -v %cd%:/imej-denoiser -p 8000:8000 imej-denoiser
+   ```
 
 ### Install on venv (PyTorch inference)
 1. **Clone the Repository**
@@ -100,7 +115,7 @@ To set up the environment, there are two ways:
    ```bash
    python torch2onnx.py
    ```
-   2. Conver .onnx to .trt
+   2. Convert .onnx to .trt
    ```bash
    trtexec --onnx=dae_model.onnx --saveEngine=model.trt --explicitBatch --optShapes=input:1x3x256x256 --maxShapes=input:1x3x256x256
    ```
